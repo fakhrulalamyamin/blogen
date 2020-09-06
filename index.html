@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Link to fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/af8280ea86.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Blogen</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a href="posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a href="users.html" class="nav-link">Users</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-3">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-user"></i> Welcome Yamin
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fas fa-user-circle"></i> Profile
+                </a>
+                <a href="settings.html" class="dropdown-item">
+                  <i class="fas fa-cog"></i> Settings
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="fas fa-user-times"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="py-4 mb-4 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><i class="fas fa-cog mr-2"></i>Dashboard</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ACTIONS -->
+    <section id="actions" class="py-3 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn btn-primary btn-block"
+              data-toggle="modal"
+              data-target="#addPostModal"
+            >
+              <i class="fas fa-plus"></i> Add Post
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn btn-success btn-block"
+              data-toggle="modal"
+              data-target="#addCategoryModal"
+            >
+              <i class="fas fa-plus"></i> Add Category
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn btn-warning btn-block"
+              data-toggle="modal"
+              data-target="#addUserModal"
+            >
+              <i class="fas fa-plus"></i> Add User
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTS -->
+    <section id="posts py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <h4>Latest Posts</h4>
+              </div>
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Post Title</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Post One</td>
+                    <td>Web Development</td>
+                    <td>September 1, 2020</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angel-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Post Two</td>
+                    <td>Business</td>
+                    <td>September 2, 2020</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angel-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Post Three</td>
+                    <td>CMS</td>
+                    <td>September 3, 2020</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angel-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Post Four</td>
+                    <td>Web Development</td>
+                    <td>August 29, 2020</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angel-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Post Five</td>
+                    <td>Web Development</td>
+                    <td>September 5, 2020</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angel-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Post Six</td>
+                    <td>CMS</td>
+                    <td>September 6, 2020</td>
+                    <td>
+                      <a href="details.html" class="btn btn-secondary">
+                        <i class="fas fa-angel-double-right"></i> Details
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center bg-primary text-white mb-3">
+              <div class="card-body">
+                <h3>Posts</h3>
+                <h4 class="display-4"><i class="fas fa-pencil-alt"></i> 6</h4>
+                <a href="posts.html" class="btn btn-outline-light btn-sm"
+                  >View All</a
+                >
+              </div>
+            </div>
+            <div class="card text-center bg-success text-white mb-3">
+              <div class="card-body">
+                <h3>Categories</h3>
+                <h4 class="display-4"><i class="fas fa-folder"></i> 4</h4>
+                <a href="categories.html" class="btn btn-outline-light btn-sm"
+                  >View All</a
+                >
+              </div>
+            </div>
+            <div class="card text-center bg-warning text-white mb-3">
+              <div class="card-body">
+                <h3>User</h3>
+                <h4 class="display-4"><i class="fas fa-user"></i> 4</h4>
+                <a href="users.html" class="btn btn-outline-light btn-sm"
+                  >View All</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-5 bg-dark text-white mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center m-0">
+              Copyright &copy; <span id="year"></span>, Blogen
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- Add Post Modal -->
+    <div class="modal fade" id="addPostModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Add Post</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  id="title"
+                  class="form-control"
+                  placeholder="Enter Title"
+                />
+              </div>
+              <div class="form-group">
+                <label for="select">Category</label>
+                <select id="select" class="form-control">
+                  <option value="selected">Select Category</option>
+                  <option>Web Development</option>
+                  <option>CMS</option>
+                  <option>Business</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="file">Upload Image</label>
+                <div class="custom-file">
+                  <input type="file" id="file" class="custom-file-input" />
+                  <label for="file" class="custom-file-label"
+                    >Choose Image</label
+                  >
+                </div>
+                <small class="form-text text-muted">Max Size 3MB</small>
+              </div>
+              <div class="form-group">
+                <label for="body">Body</label>
+                <textarea
+                  name="editor1"
+                  id="body"
+                  class="form-control"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <footer class="modal-footer">
+            <a href="#" class="btn btn-primary" data-dismiss="modal"
+              >Save Changes</a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Category Modal -->
+    <div class="modal fade" id="addCategoryModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Add Category</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  id="title"
+                  class="form-control"
+                  placeholder="Enter Title"
+                />
+              </div>
+            </form>
+          </div>
+          <footer class="modal-footer">
+            <a href="#" class="btn btn-success" data-dismiss="modal"
+              >Add Category</a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add User Modal -->
+    <div class="modal fade" id="addUserModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title">Add User</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                <input
+                  type="password"
+                  id="password1"
+                  class="form-control"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input
+                  type="password"
+                  id="password2"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                />
+              </div>
+            </form>
+          </div>
+          <footer class="modal-footer">
+            <a href="#" class="btn btn-warning" data-dismiss="modal"
+              >Add Category</a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
